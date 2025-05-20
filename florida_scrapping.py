@@ -37,7 +37,7 @@ def scrape_website(url,emailAddress,password):
         page.click(allStatusLink)
         # funtion to open a file
         def file_open(url):
-            absolute_url = f"https://mqadatadownload.azurewebsites.net/{url}"
+            absolute_url = f"web Site Link/{url}"
             file = requests.get(absolute_url)
             with open('arl.txt', 'wb') as f:
                 f.write(file.content)
@@ -58,4 +58,4 @@ def scrape_website(url,emailAddress,password):
         # Closing Browser
         browser.close()
 
-scrape_website("https://mqadatadownload.azurewebsites.net/LicensureData","chris24092004@gmail.com", "Cyrino@2024")
+scrape_website("Web Site Link","Your Mail Id", "Pass")
